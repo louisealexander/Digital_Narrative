@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    background-color:#FBECD9;
+}
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    height: 100vh;
+    font-family: "Bagerich";
+    font-weight: 400;
+    font-size: 4rem;
+    text-align: center;
+}
+.scroll-element{
+    width: 100%;
+    height: 100vh;
+}
+#title-page{
+    background-image: url(../images/muchTitlePAge.png);
+    background-position: center center;
+    background-size: cover;
+    font-family: "Bagerich";
+    color: #64250E;
+    font-weight: 400;
+}
+#date-title{
+    font-family: Bagerich;
+    font-size: 70px;
+}
+#title-page p{
+    font-family: Bagerich;
+    font-size: 40px;
+    color: white;
+    background-color: #556E59;
+    width: 400px;
+    border-radius: 15px;
+    margin-left: 43%;
+}
+.page-title{
+    text-align: center;
+    font-family: Bagerich;
+    font-size: 53px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-image{
+    max-width: 100%;
+    border-radius: 25px;
+}
+#section-1{
+    color: #64250E;
+}
+.column{
+    width: 450px;
+    flex: 1;
+    padding: 10px;
+}
+.column p{
+    font-family: Quicksand Light;
+    font-size: 17px;
+    background-color: #C3BCD2;
+    padding: 10px;
+    border-radius: 15px;
+}
+#col1 p{
+    margin-bottom: 15px;
+}
+#col5 p{
+    margin-bottom: 15px;
+}
+#section-2{
+    background-color: #FBECD9;
+    color: #64250E;
+}
+#section-3{
+    background-color: #FBECD9;
+    color: #64250E;
+}
+#section-4{
+    background-color: #FBECD9;
+    color: #64250E;
+}
+#section-5{
+    background-color: #FBECD9;
+    color: #64250E;
+}
+@font-face {
+    font-family: "Bagerich";
+    src: url("../fonts/FontsFree-Net-Bagerich.ttf");
+}
+@font-face {
+    font-family: "Quicksand Light";
+    src: url("../fonts/Quicksand-VariableFont_wght.ttf");
+}
+.js-scroll{
+    opacity: 0;
+}
+.scrolled.fade-in{
+    animation: fade-in 1.5s ease-in-out both;
+}
+.scrolled.slide-left{
+    animation: slide-in-left 1.5s ease-in-out both;
+}
+.scrolled.slide-right{
+    animation: slide-in-right 1.5s ease-in-out both;
+}
+.scrolled.slide-bottom{
+    animation: slide-in-bottom 1.5s ease-in-out both;
+}
+/* Keyframe animations */
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+/* optimised for my laptop */
+/* @media (max-width:1366px) {
+    .column{
+        min-width: 50%;
+    }
+} */
